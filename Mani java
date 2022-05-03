@@ -1,0 +1,24 @@
+abstract class Raja{
+  public abstract void m1();
+  abstract void m2() ; 
+}
+abstract class Tamil extends Raja{
+      abstract void m3();
+    public void m1(){
+    System.out.println("good");
+     } 
+}
+class Ramu extends Tamil{
+    void m2(){
+    System.out.println("nice");
+    }
+     void m3(){
+   System.out.println("welcome");
+    }
+public static void main (String[]args){
+       Ramu r = new Ramu();
+       r.m1();
+       r.m2();
+       r.m3();
+   }
+}
